@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Credit-card-app-ReactJS/static/css/main.0bac7c78.css",
+    "main.js": "/Credit-card-app-ReactJS/static/js/main.b8c17141.js",
+    "static/media/SpaceGrotesk-VariableFont_wght.ttf": "/Credit-card-app-ReactJS/static/media/SpaceGrotesk-VariableFont_wght.1036357b9651eff7d3dd.ttf",
+    "static/media/bg-main-desktop.png": "/Credit-card-app-ReactJS/static/media/bg-main-desktop.806e7aa7b4dbc1d78bc3.png",
+    "static/media/bg-card-back.png": "/Credit-card-app-ReactJS/static/media/bg-card-back.23f68fa3aa3d5b33dfc8.png",
+    "static/media/bg-card-front.png": "/Credit-card-app-ReactJS/static/media/bg-card-front.8153e2ca184402a8385f.png",
+    "static/media/bg-main-mobile.png": "/Credit-card-app-ReactJS/static/media/bg-main-mobile.caa4689407777a312ede.png",
+    "index.html": "/Credit-card-app-ReactJS/index.html",
+    "main.0bac7c78.css.map": "/Credit-card-app-ReactJS/static/css/main.0bac7c78.css.map",
+    "main.b8c17141.js.map": "/Credit-card-app-ReactJS/static/js/main.b8c17141.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0bac7c78.css",
+    "static/js/main.b8c17141.js"
+  ]
+}
