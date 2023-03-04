@@ -1,0 +1,23 @@
+.completed-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        width: 50%;
+    }
+
+    button {
+        width: 100%;
+        height: 40px;
+        border-radius: 10px;
+        background-color: hsl(278, 68%, 11%);
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: hsl(278, 75%, 31%);
+    }
+}

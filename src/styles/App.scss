@@ -1,0 +1,15 @@
+.App {
+    // scales config
+    width: 100vw;
+    height: 100vh;
+
+    // layout type
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    // background config
+    background: url('../../public/images/bg-main-desktop.png'), white;
+    background-position: left, right;
+    background-repeat: no-repeat;
+}

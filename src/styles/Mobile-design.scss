@@ -1,0 +1,67 @@
+/* Hi, this is an separated file to media queries and adjustment on the original website, for acessibility */
+
+// imports
+
+@import url('./App.scss');
+@import url('./Card-images.scss');
+@import url('./Form.scss');
+@import url('./CompletedForm.scss');
+
+// Media Queries
+
+@media (max-width: 900px){
+    // App
+
+    .App {
+        height: 100%;
+        flex-direction: column;
+
+        background: url('../../public/images/bg-main-mobile.png');
+        background-position: top, bottom;
+        background-repeat: repeat-x;
+    }
+
+    // Card-images
+    
+    .images-layout {
+        width: 80vw;
+        height: 350px;
+        position: relative;
+        margin: 0 20px;
+
+        #frontcard {
+            bottom: 10%;
+            right: 0;
+            position: absolute;
+            z-index: 1;
+            width: 300px;
+        }
+        #backcard {
+            top: 0;
+            left: 0;
+            position: absolute;
+            width: 300px;
+        }
+    }
+
+    // Form
+
+    .formulary {
+        margin: 50px 0;
+        width: 50vw;
+    }
+
+    // CompletedForm
+    .completed-form {
+        margin: 50px 0
+    }
+
+}
+
+@media (max-width: 600px) {
+    // Form
+
+    .formulary {
+        width: 90vw;
+    }
+}

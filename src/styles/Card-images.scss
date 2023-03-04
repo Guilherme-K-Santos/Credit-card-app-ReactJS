@@ -1,0 +1,119 @@
+// mixins
+
+@mixin default-card-infos {
+    margin: 0;
+    color: hsl(270, 3%, 87%);
+    letter-spacing: 2px;
+}
+
+@mixin image-div-basic-config {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 320px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+@mixin frontcard-elements-layout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// the great div holding everything
+.images-layout {
+    height: 70vh;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    #frontcard {
+        background-image: url('../../public/images/bg-card-front.png');
+        @include image-div-basic-config;
+
+        display: grid;
+        grid-template: 
+            "img img" 33% 
+            "number number" 40% 
+            "name-costumer date" 20% / 60% 40%;
+
+        img {
+            width: 20%;
+            margin: 20px;
+
+            // layout config
+            grid-area: img;
+        }
+
+        #number {
+            @include default-card-infos;
+            @include frontcard-elements-layout;
+
+            // own properties
+            font-size: 20px;
+            align-items: flex-end;
+            justify-content: flex-start;
+            text-indent: 25px;
+
+            // layout config
+            grid-area: number;
+        }
+        
+        #name {
+            @include default-card-infos;
+            @include frontcard-elements-layout;
+
+            // own properties
+            font-size: 12px;
+
+            // layout config
+            grid-area: name-costumer;
+
+            display: flex;
+            justify-content: flex-start;
+
+            margin-left: 25px;
+
+            // method to hide really long names.
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        #date {
+            @include default-card-infos;
+            @include frontcard-elements-layout;
+
+            // own properties
+            font-size: 12px;
+
+            // layout config
+            grid-area: date;
+
+        }
+    }
+
+    #backcard {
+        align-self: flex-end;
+        background-image: url('../../public/images/bg-card-back.png');
+        @include image-div-basic-config;
+
+        // layout config (setting the center - vertically -)
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        #security-number {
+            @include default-card-infos;
+
+            // layout config (setting the right place)
+            margin: 0 20px;
+            align-self: flex-end;
+
+            // text config
+            font-size: 12px;
+            font-weight: bold;
+        }
+    }
+}

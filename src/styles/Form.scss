@@ -1,0 +1,81 @@
+// variables
+$form-button-font-weight: bold;
+
+// mixins
+@mixin flex-wrap {
+    display: flex;
+    flex-wrap: wrap;  
+}
+
+// the box where everything resides
+.formulary {
+    width: 25vw;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+}
+
+// the form itself
+form {
+    display: grid;
+    grid-template-rows: 33%;
+
+    // basic input config
+    input {
+        height: 30px;
+        border-radius: 10px;
+        border-color: lightgray;
+        margin: 10px 0 20px  0;
+    }
+
+    div {
+        @include flex-wrap;
+
+        // config for spec label and input 
+        label {
+            width: 100%;
+            font-weight: $form-button-font-weight;
+        }
+
+        input {
+            width: 95%;
+        }
+    }
+
+    // grid layout to better organization
+    div.same-line {
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        // flex organization inside grid organization
+        #dates {
+            @include flex-wrap;
+            justify-content: flex-start;
+
+            label {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            input {
+                width: 40%;
+                margin-right: 3px;
+            }
+        }
+    }
+
+    // button style
+    button {
+        height: 40px;
+        border-radius: 10px;
+        background-color: hsl(278, 68%, 11%);
+        color: white;
+        font-weight: $form-button-font-weight;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: hsl(278, 75%, 31%);
+    }
+}
