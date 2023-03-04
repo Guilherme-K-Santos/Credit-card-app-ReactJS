@@ -32,3 +32,7 @@ to 'what i learned'). However, I did my best, and I am very proud of the results
 - Linkedin - https://www.linkedin.com/in/guilherme-k-santos/
 - Github - https://github.com/Guilherme-K-Santos
 - Email - guifocassio1@gmail.com
+
+##Warning!
+
+- this site considers only valid the years between the current and 2030 (30 in the YY box)
